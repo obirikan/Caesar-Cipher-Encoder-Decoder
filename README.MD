@@ -3,6 +3,11 @@
 This project implements a **modular Caesar cipher** for encoding and decoding English alphabetic messages. It's structured in a clean, maintainable folder-based architecture using Python functions and modules.
 
 ---
+## 📁 
+![Caesar Cipher Diagram](assets/diagram.png)
+
+
+
 
 ## 📁 Project Structure
 
@@ -82,3 +87,5 @@ MIT License — free to use and modify.
 * GitHub: obirikan
 
 > "Encryption teaches us the power of shifting perspective—literally and logically."
+
+
