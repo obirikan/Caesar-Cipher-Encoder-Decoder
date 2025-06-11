@@ -1,12 +1,10 @@
-from Tokenizer.main import Transfomer
+from Tokenizer.main import Transformer
 
-input_sentence = 'jxu evviuj veh jxu iusedt cuiiqwu yi vekhjuud.' # decoder problem 
-input_sentence = input_sentence.lower()
-
-encoded_message,decoded_message=Transfomer(input_sentence)
-
-print('Encoded Message',encoded_message)
-print('Decoded Message',decoded_message)
+input_sentence = 'xuo jxuhu! jxyi yi qd unqcfbu ev q squiqh syfxuh. muhu oek qrbu je tusetu yj? y xefu ie! iudt cu q cuiiqwu rqsa myjx jxu iqcu evviuj!'
+encoded, decoded = Transformer(input_sentence)
+print(f"Original: {input_sentence}")
+print(f"Encoded: {encoded}")
+print(f"Decoded: {decoded}")
 
 
 
