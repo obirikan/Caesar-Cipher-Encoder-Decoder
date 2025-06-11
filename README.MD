@@ -1,72 +1,84 @@
-# 🔐 Simple Caesar Cipher Encoder/Decoder (Python)
+# 🔐 Modular Caesar Cipher
 
-This is a **basic Caesar cipher project (Phase 1)** that demonstrates a simple letter-shifting encryption and decryption algorithm using Python.
-
----
-
-## 🧠 How It Works
-
-* A lowercase English alphabet string is defined.
-* A word (`text`) is encoded by shifting each character **backward by 3 positions**.
-* The encoded message is then decoded by **shifting forward by 3 positions**, reversing the encryption.
+This project implements a **modular Caesar cipher** for encoding and decoding English alphabetic messages. It's structured in a clean, maintainable folder-based architecture using Python functions and modules.
 
 ---
 
-## 🧪 Sample Input & Output
+## 📁 Project Structure
 
-```python
-text = 'hello'
-# Encoded: 'ebiil'
-# Decoded: 'hello'
+```
+CaesarCipherProject/
+├── main.py                         # Main runner script
+├── Variables/
+│   └── main.py                     # Contains shared constants (alphabets, delimiter)
+├── Tokenizer/
+│   └── main.py                     # Contains the Transfomer function
+├── encoder/
+│   └── encoder.py                  # Encoding logic
+├── decoder/
+    └── decoder.py                  # Decoding logic
 ```
 
 ---
 
-## 📁 Files
+## 🚀 How It Works
 
-* `caesar_cipher.ipynb`: Main script for encoding and decoding
+### 🔁 `Transfomer(input_sentence)`
 
----
+* Breaks sentence into individual characters
+* Converts characters into index positions in the alphabet
+* Passes characters to `Encode_Message()` and indices to `Decoded_Message()`
 
-## 🧱 Core Logic (Phase 1)
+### 🔐 `Encode_Message(each_letter)`
 
-* `alphabets = 'abcdefghijklmnopqrstuvwxyz'`
-* `indexes = [alphabets.find(x) - 3 for x in text]`
-* `encoded_text = [alphabets[x] for x in indexes]`
-* `decoded_text = [alphabets[alphabets.find(x) + 3] for x in encoded_text]`
+* Shifts each letter back by 3 positions in the alphabet
+* Returns the encoded message as a string
 
----
+### 🔓 `Decoded_Message(word_index_in_alphabet)`
 
-## 🚀 Planned Improvements (Phase 2+)
-
-* Handle uppercase letters
-* Wrap around alphabet for boundary letters (e.g., 'a' → 'x')
-* Include punctuation and whitespace handling
-* Add user input functionality (CLI or GUI)
-* Write unit tests
+* Adjusts negative indices (replaces them with -1, which maps to 'z')
+* Reconstructs the original sentence (note: 'z' used as space)
 
 ---
 
-## 🧩 Dependencies
+## 💬 Example
 
-* Python 3 (no external libraries required)
+```python
+input_sentence = 'we are going home today'
+
+# Output:
+Encoded Message: tb xob dlfkd eljb qlabv
+Decoded Message: we are going home today
+```
+
+(Note: In this version, 'z' is temporarily used to indicate spaces)
+
+---
+
+## 🔧 Future Improvements (Phase 2+)
+
+* Fix space handling more cleanly without using 'z'
+* Support upper/lower case properly
+* Handle non-alphabetic characters
+* Create CLI or GUI wrapper
+* Write unit tests for encoding/decoding logic
+
+---
+
+## 📦 Requirements
+
+* Python 3+
 
 ---
 
 ## ⚖️ License
 
-This project is MIT licensed and open for learning, modification, and contribution.
-
----
-
-## 🤝 Contributions
-
-Feel free to fork, improve, and submit pull requests. Let’s build this into a full-featured crypto learning tool!
+MIT License — free to use and modify.
 
 ---
 
 ## 👤 Author
 
-* GitHub: \[your\_username]
+* GitHub: obirikan
 
-> "Encryption begins with the simplest ideas. This is one of them."
+> "Encryption teaches us the power of shifting perspective—literally and logically."

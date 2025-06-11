@@ -1,0 +1,3 @@
+alphabets='abcdefghijklmnopqrstuvwxyz'
+
+delimiter=''
