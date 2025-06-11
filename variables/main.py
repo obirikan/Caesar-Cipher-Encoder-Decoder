@@ -1,3 +1,3 @@
-alphabets='abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+'
+alphabets='abcdefghijklmnopqrstuvwxyz'
 
 delimiter=''

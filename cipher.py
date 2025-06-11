@@ -1,6 +1,6 @@
 from Tokenizer.main import Transfomer
 
-input_sentence = 'call me on my number 0202180726'
+input_sentence = 'call me on my number'
 input_sentence = input_sentence.lower()
 
 encoded_message,decoded_message=Transfomer(input_sentence)
