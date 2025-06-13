@@ -11,7 +11,7 @@ This project implements a **modular Caesar cipher** for encoding and decoding En
 
 ```
 CaesarCipherProject/
-├── main.py                         # Main runner script
+├── cipher.py                       # Main runner script
 ├── Variables/
 │   └── main.py                     # Contains shared constants (alphabets, delimiter)
 ├── Tokenizer/
@@ -60,11 +60,9 @@ Decoded Message: we are going home today
 
 ## 🔧 Future Improvements (Phase 2+)
 
-* Fix space handling more cleanly without using 'z'
 * Support upper/lower case properly
 * Handle non-alphabetic characters
 * Create CLI or GUI wrapper
-* Write unit tests for encoding/decoding logic
 
 ---
 
