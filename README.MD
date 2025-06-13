@@ -3,10 +3,8 @@
 This project implements a **modular Caesar cipher** for encoding and decoding English alphabetic messages. It's structured in a clean, maintainable folder-based architecture using Python functions and modules.
 
 ---
-## 📁 
-![Caesar Cipher Diagram](assets/diagram.png)
-
-
+## 📁 Architecture
+![Caesar Cipher Diagram](assets/cc.png)
 
 
 ## 📁 Project Structure
